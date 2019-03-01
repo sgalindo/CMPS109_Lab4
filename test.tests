@@ -1,0 +1,30 @@
+# Dont read this!
+Circle -1,1 2 Circle 0,0 8 true circle inside circle
+RegularConvexPolygon -4,-4 -4,4 4,4 4,-4 Circle 0,0 8 true square inside circle
+Circle 3,3 4 RegularConvexPolygon -4,-4 -4,4 4,4 4,-4 false circle intersects square
+RegularConvexPolygon -4,-4 -4,4 4,4 4,-4 RegularConvexPolygon -4,-4 -4,4 4,4 4,-4 true square same square
+ReuleauxTriangle 0,6.928204 6,-3.46410161514 -6,-3.46410161514 Circle 0,0 12 true rt inside circle
+ReuleauxTriangle 0,6.928204 6,-3.46410161514 -6,-3.46410161514 RegularConvexPolygon -10,-10 -10,10 10,10 10,-10 true rt inside polygon
+ReuleauxTriangle 0,6.928204 6,-3.46410161514 -6,-3.46410161514 ReuleauxTriangle 0,6.928204 6,-3.46410161514 -6,-3.46410161514 true rt same rt
+ReuleauxTriangle 0,6.928204 6,-3.46410161514 -6,-3.46410161514 Circle 8,8 3 false circle outside rt
+Circle 0,0 3 ReuleauxTriangle 0,6.928204 6,-3.46410161514 -6,-3.46410161514 true circle inside rt
+ReuleauxTriangle 0,6.928204 6,-3.46410161514 -6,-3.46410161514 Circle 0,5 4 false reuleaux interects circle
+Sphere 0,0,0 4 Sphere 0,0,0 8 true sphere inside sphere 
+Sphere 0,4,0 4 Sphere 0,0,0 8 true sphere edge sphere
+Sphere 6,3,0 4 Sphere 0,0,0 8 false sphere intersects sphere
+Sphere 0,0,0 8 Sphere 0,1,0 8  invalid input
+Sphere 0,0,0 8 Sphere 0,0,0 8 true sphere same sphere
+ReuleauxTetrahedron 0,6.9282038076,-2.4494896067 6,-3.4641018076,-2.4494896067 -6,-3.4641018076,-2.4494896067 0,-0.0000001924,7.3484688202 Sphere 0,0,0 8 true rtetra inside sphere
+ReuleauxTetrahedron 0,6.9282038076,-2.4494896067 6,-3.4641018076,-2.4494896067 -6,-3.4641018076,-2.4494896067 0,-0.0000001924,7.3484688202 Sphere 4,4,0 8 false rtetra intersects sphere
+ReuleauxTetrahedron 0,6.9282038076,-2.4494896067 6,-3.4641018076,-2.4494896067 -6,-3.4641018076,-2.4494896067 0,-0.0000001924,7.3484688202 ReuleauxTetrahedron 0,6.9282038076,-2.4494896067 6,-3.4641018076,-2.4494896067 -6,-3.4641018076,-2.4494896067 0,-0.0000001924,7.3484688202 true rtetra same rtetra
+ReuleauxTetrahedron 0,6.9282038076,-2.4494896067 6,-3.4641018076,-2.4494896067 -6,-3.4641018076,-2.4494896067 0,-0.0000001924,7.3484688202 ReuleauxTetrahedron 1,6.9282038076,-2.4494896067 7,-3.4641018076,-2.4494896067 -5,-3.4641018076,-2.4494896067 1,-0.0000001924,7.3484688202 false rtetra intersects rtetra
+Cube 4,4,4 -4,4,4 -4,4,-4 4,4,-4 4,-4,4 -4,-4,4 -4,-4,-4 4,-4,-4 Sphere 0,0,0 16 true cube inside sphere
+Cube 4,4,4 -4,4,4 -4,4,-4 4,4,-4 4,-4,4 -4,-4,4 -4,-4,-4 4,-4,-4 Sphere 4,4,0 8 false cube intersects sphere
+Sphere 0,0,0 4 Cube 4,4,4 -4,4,4 -4,4,-4 4,4,-4 4,-4,4 -4,-4,4 -4,-4,-4 4,-4,-4 true sphere inside cube
+Sphere 4,0,4 4 Cube 4,4,4 -4,4,4 -4,4,-4 4,4,-4 4,-4,4 -4,-4,4 -4,-4,-4 4,-4,-4 false sphere intersects cube
+Cube 4,4,4 -4,4,4 -4,4,-4 4,4,-4 4,-4,4 -4,-4,4 -4,-4,-4 4,-4,-4 Cube 4,4,4 -4,4,4 -4,4,-4 4,4,-4 4,-4,4 -4,-4,4 -4,-4,-4 4,-4,-4 true cube same cube
+Cube 5,5,5 -3,5,5 -3,5,-3 5,5,-3 5,-3,5 -3,-3,5 -3,-3,-3 5,-3,-3 Cube 4,4,4 -4,4,4 -4,4,-4 4,4,-4 4,-4,4 -4,-4,4 -4,-4,-4 4,-4,-4 false cube intersects cube
+Cube 1,1,1 -1,1,1 -1,1,-1 1,1,-1 1,-1,1 -1,-1,1 -1,-1,-1 1,-1,-1 ReuleauxTetrahedron 0,6.9282038076,-2.4494896067 6,-3.4641018076,-2.4494896067 -6,-3.4641018076,-2.4494896067 0,-0.0000001924,7.3484688202 true cube inside rtetra
+Cube 4,4,4 -4,4,4 -4,4,-4 4,4,-4 4,-4,4 -4,-4,4 -4,-4,-4 4,-4,-4 ReuleauxTetrahedron 0,6.9282038076,-2.4494896067 6,-3.4641018076,-2.4494896067 -6,-3.4641018076,-2.4494896067 0,-0.0000001924,7.3484688202 false cube intersects rtetra
+ReuleauxTetrahedron 0,6.9282038076,-2.4494896067 6,-3.4641018076,-2.4494896067 -6,-3.4641018076,-2.4494896067 0,-0.0000001924,7.3484688202 Cube 8,8,8 -8,8,8 -8,8,-8 8,8,-8 8,-8,8 -8,-8,8 -8,-8,-8 8,-8,-8 true rtetra inside cube 
+ReuleauxTetrahedron 0,6.9282038076,-2.4494896067 6,-3.4641018076,-2.4494896067 -6,-3.4641018076,-2.4494896067 0,-0.0000001924,7.3484688202 Cube 1,1,1 -1,1,1 -1,1,-1 1,1,-1 1,-1,1 -1,-1,1 -1,-1,-1 1,-1,-1 false rtetra intersects cube 

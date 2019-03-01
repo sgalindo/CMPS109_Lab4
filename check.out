@@ -1,0 +1,13 @@
+
+Test file: bounds.tests
+Error: invalid test input.
+    Inner Polygon verts: 4
+    Outer Circle: (0,0) radius: 8
+PASS
+Error: invalid test input.
+    Inner Circle: (3,3) radius: 4
+    Outer Polygon verts: 4
+PASS
+
+               Tests:    2/  2   100.0%
+
